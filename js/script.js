@@ -38,3 +38,6 @@ function realizarBusca(evento) {
 // Evento de envio
 
 formularioBusca.addEventListener("submit", realizarBusca);
+
+// Formulario de contato 
+
