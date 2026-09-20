@@ -207,52 +207,6 @@ textarea {
     filter: invert(1);
 }
 
-
-
-
-.campo-busca {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    margin-left: 25px;
-}
-
-.campo-busca input {
-    width: 145px;
-
-    padding: 10px;
-
-    border: none;
-    outline: none;
-
-    background-color: transparent;
-    color: #ffffff;
-
-    font-size: 11px;
-}
-
-.campo-busca input::placeholder {
-    color: #94a3b8;
-}
-
-.campo-busca button {
-    padding: 10px 12px;
-
-    border: none;
-
-    background-color: transparent;
-    color: #cbd5e1;
-
-    cursor: pointer;
-}
-
-.campo-busca button:hover {
-    color: #ffffff;
-}
-
-
-
-
 .secao-destaque {
     margin-top: 25px;
 }
