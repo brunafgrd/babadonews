@@ -30,40 +30,6 @@ atualizarData();
 setInterval(atualizarData, 60000);
 
 
-/* =================================
-   BUSCA DE NOTÍCIAS
-================================= */
-
-// Seleciona os elementos do formulário
-const formularioBusca = document.getElementById("formularioBusca");
-const campoPesquisa = document.getElementById("campoPesquisa");
-
-// Função responsável pela busca
-function realizarBusca(evento) {
-
-    evento.preventDefault();
-
-    const termoPesquisa = campoPesquisa.value.trim();
-
-    if (termoPesquisa === "") {
-
-        alert("Digite uma notícia para pesquisar.");
-
-        return;
-
-    }
-
-    alert("Você pesquisou por: " + termoPesquisa);
-
-}
-
-// Evento de envio
-if (formularioBusca) {
-
-    formularioBusca.addEventListener("submit", realizarBusca);
-
-}
-
 
 /* =================================
    FORMULÁRIO DE INSCRIÇÃO
