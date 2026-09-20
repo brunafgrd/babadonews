@@ -1237,14 +1237,7 @@ textarea {
         font-size: 12px;
     }
 
-    .campo-busca {
-        margin-left: 12px;
-    }
-
-    .campo-busca input {
-        width: 145px;
-    }
-
+    
     .grade-categorias {
         gap: 10px;
     }
@@ -1288,17 +1281,6 @@ textarea {
 
     .menu-site .nav-link {
         padding: 10px 0;
-    }
-
-    .campo-busca {
-        width: 100%;
-
-        margin-top: 15px;
-        margin-left: 0;
-    }
-
-    .campo-busca input {
-        width: 100%;
     }
 
     .grade-destaques {
