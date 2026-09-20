@@ -1,101 +1,83 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Babado News - Notícias, cultura e entretenimento.">
+    <meta name="description"
+        content="Babado News - Notícias, cultura, entretenimento, esportes e tecnologia.">
 
     <title>Babado News | Início</title>
 
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <!-- FAVICON -->
-
-    <link rel="icon" type="image/png" href="img/favicon-babado-news.png">
-
-
-    <!-- BOOTSTRAP -->
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
-
-    <!-- ÍCONES -->
-
-    <link
-        rel="stylesheet"
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
-    <!-- FONTE -->
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-
-    <!-- CSS -->
-
+    <!-- CSS do projeto -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
 
-
-    <!-- ================================
-         CABEÇALHO
-    ================================= -->
-
+    <!-- CABEÇALHO -->
     <header class="cabecalho-site">
 
-        <div class="container-fluid px-4 px-lg-5">
+        <div class="barra-superior">
 
-            <div class="cabecalho-conteudo">
+            <div class="data-site">
+                <span id="data-atual"></span>
+            </div>
 
+            <div class="links-superiores">
+                <a href="#">Assine</a>
+                <span>|</span>
+                <a href="contato.html">Fale conosco</a>
+            </div>
 
-                <a href="index.html" class="logo-site">
+        </div>
 
-                    <img
-                        src="img/logo-babado-news.png"
-                        alt="Babado News">
+        <div class="cabecalho-conteudo">
 
-                </a>
+            <div class="cabecalho-manifesto">
+                <span class="linha-destaque"></span>
+                <span>NOTÍCIAS</span>
+                <span>CULTURA</span>
+                <span>ENTRETENIMENTO</span>
+                <span>E MUITO MAIS</span>
+            </div>
 
+            <a href="index.html" class="logo-site">
 
-                <div class="cabecalho-manifesto">
+                <img src="img/logo.png" alt="Logo Babado News">
 
-                    <span>NOTÍCIAS</span>
+                <p class="slogan-site">
+                    TUDO O QUE IMPORTA, EM UM SÓ LUGAR.
+                </p>
 
-                    <span>CULTURA</span>
+            </a>
 
-                    <span>ENTRETENIMENTO</span>
+            <div class="cabecalho-descricao">
 
-                    <span>E MUITO MAIS</span>
+                <p>Informação que te acompanha.</p>
 
-                </div>
+                <strong>Todos os dias.</strong>
 
-
-                <div class="cabecalho-descricao">
-
-                    Informação que te acompanha.
-
-                    <br>
-
-                    <strong>Todos os dias.</strong>
-
-                </div>
-
+                <span class="linha-destaque"></span>
 
             </div>
 
@@ -104,27 +86,12 @@
     </header>
 
 
-
-    <!-- ================================
-         MENU
-    ================================= -->
-
+    <!-- MENU PRINCIPAL -->
     <nav class="navbar navbar-expand-lg menu-site">
 
         <div class="container-fluid px-4 px-lg-5">
 
-
-            <a href="index.html" class="navbar-brand marca-menu">
-
-                <span>BABADO</span>
-
-                <strong>NEWS.</strong>
-
-            </a>
-
-
-            <button
-                class="navbar-toggler"
+            <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#menuPrincipal"
@@ -136,104 +103,68 @@
 
             </button>
 
-
             <div class="collapse navbar-collapse" id="menuPrincipal">
-
 
                 <ul class="navbar-nav mx-auto">
 
-
                     <li class="nav-item">
-
                         <a href="index.html" class="nav-link ativo">
-
                             Início
-
                         </a>
-
                     </li>
 
-
                     <li class="nav-item">
-
-                        <a href="noticias.html" class="nav-link">
-
-                            Notícias
-
+                        <a href="politica.html" class="nav-link">
+                            Política
                         </a>
-
                     </li>
 
-
                     <li class="nav-item">
-
                         <a href="entretenimento.html" class="nav-link">
-
                             Entretenimento
-
                         </a>
-
                     </li>
 
-
                     <li class="nav-item">
-
                         <a href="esportes.html" class="nav-link">
-
                             Esportes
-
                         </a>
-
                     </li>
 
-
                     <li class="nav-item">
-
                         <a href="lifestyle.html" class="nav-link">
-
                             Lifestyle
-
                         </a>
-
                     </li>
 
-
                     <li class="nav-item">
-
                         <a href="tecnologia.html" class="nav-link">
-
                             Tecnologia
-
                         </a>
-
                     </li>
-
 
                     <li class="nav-item">
-
                         <a href="sobre.html" class="nav-link">
-
-                            Sobre
-
+                            Sobre Nós
                         </a>
-
                     </li>
 
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">
+                            Contato
+                        </a>
+                    </li>
 
                 </ul>
 
 
-
-                <!-- BUSCA -->
-
+                <!-- CAMPO DE BUSCA -->
                 <form class="campo-busca" id="formularioBusca">
 
-                    <input
-                        type="search"
+                    <input type="search"
                         id="campoPesquisa"
                         placeholder="Buscar notícias..."
                         aria-label="Buscar notícias">
-
 
                     <button type="submit" aria-label="Pesquisar">
 
@@ -243,7 +174,6 @@
 
                 </form>
 
-
             </div>
 
         </div>
@@ -251,64 +181,41 @@
     </nav>
 
 
-
-    <!-- ================================
-         CONTEÚDO PRINCIPAL
-    ================================= -->
-
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
 
-        <!-- ================================
-             DESTAQUE
-        ================================= -->
-
+        <!-- SEÇÃO DE DESTAQUE -->
         <section class="container-fluid px-4 px-lg-5 secao-destaque">
 
             <div class="row g-4">
 
 
+                <!-- CARROSSEL PRINCIPAL -->
                 <div class="col-lg-8">
-
 
                     <article class="noticia-destaque">
 
-
-                        <img
-                            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1400&q=85"
-                            alt="Palco de show"
-                            class="imagem-destaque">
-
+                        <img class="imagem-destaque"
+                            src="img/party.jpg"
+                            alt="Público acompanhando um evento musical">
 
                         <div class="sobreposicao-destaque"></div>
 
-
                         <div class="conteudo-destaque">
 
-
                             <span class="etiqueta-noticia">
-
                                 ENTRETENIMENTO
-
                             </span>
 
-
                             <h1>
-
-                                Anitta agita ensaio no Rio
-                                e anuncia novidades para 2027
-
+                                Música e entretenimento movimentam a agenda cultural brasileira
                             </h1>
 
-
                             <p>
-
-                                Cantora levou o público ao delírio
-                                e confirmou novidades especiais
-                                para o próximo ano.
-
+                                Shows, eventos e novidades do mundo dos famosos estão entre os
+                                assuntos que chamam a atenção do público.
                             </p>
-
 
                             <a href="entretenimento.html" class="botao-materia">
 
@@ -318,41 +225,34 @@
 
                             </a>
 
-
                         </div>
 
 
+                        <!-- INDICADORES DO CARROSSEL -->
                         <div class="indicadores-destaque">
 
                             <span class="selecionado"></span>
-
                             <span></span>
-
                             <span></span>
-
                             <span></span>
 
                         </div>
 
-
                     </article>
-
 
                 </div>
 
 
-
                 <!-- ÚLTIMAS NOTÍCIAS -->
-
                 <div class="col-lg-4">
-
 
                     <section class="noticias-laterais">
 
-
                         <div class="titulo-secao">
 
-                            <h2>Últimas notícias</h2>
+                            <h2>
+                                Últimas notícias
+                            </h2>
 
                             <a href="noticias.html">
 
@@ -365,147 +265,300 @@
                         </div>
 
 
-
+                        <!-- NOTÍCIA 1 -->
                         <article class="cartao-noticia">
 
-
-                            <img
-                                src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=400&q=80"
-                                alt="Show musical">
-
+                            <img src="img/show.jpg"
+                                alt="Palco de show">
 
                             <div class="texto-cartao">
 
                                 <span class="categoria-noticia">
-
                                     ENTRETENIMENTO
-
                                 </span>
 
-
                                 <h3>
-
-                                    Shows no Brasil em 2027:
-                                    saiba as datas confirmadas
-
+                                    Shows no Brasil em 2027: confira as novidades
                                 </h3>
 
-
-                                <small>Há 2 horas</small>
+                                <small>
+                                    Há 2 horas
+                                </small>
 
                             </div>
-
 
                         </article>
 
 
-
+                        <!-- NOTÍCIA 2 -->
                         <article class="cartao-noticia">
 
-
-                            <img
-                                src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=400&q=80"
+                            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=400&q=80"
                                 alt="Bola de futebol">
 
-
                             <div class="texto-cartao">
 
                                 <span class="categoria-noticia">
-
                                     ESPORTES
-
                                 </span>
 
-
                                 <h3>
-
-                                    Brasileirão esquenta na reta final:
-                                    veja os próximos confrontos
-
+                                    Futebol brasileiro se prepara para novos confrontos
                                 </h3>
 
-
-                                <small>Há 4 horas</small>
+                                <small>
+                                    Há 4 horas
+                                </small>
 
                             </div>
-
 
                         </article>
 
 
-
+                        <!-- NOTÍCIA 3 -->
                         <article class="cartao-noticia">
 
-
-                            <img
-                                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=400&q=80"
-                                alt="Notebook">
-
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80"
+                                alt="Computador e tecnologia">
 
                             <div class="texto-cartao">
 
                                 <span class="categoria-noticia">
-
                                     TECNOLOGIA
-
                                 </span>
 
-
                                 <h3>
-
-                                    5 novidades da tecnologia
-                                    para ficar de olho em 2027
-
+                                    Novas tecnologias prometem transformar o cotidiano
                                 </h3>
 
-
-                                <small>Há 6 horas</small>
+                                <small>
+                                    Há 6 horas
+                                </small>
 
                             </div>
 
-
                         </article>
-
 
                     </section>
 
-
                 </div>
-
 
             </div>
 
         </section>
 
 
+        <!-- SEÇÃO EM DESTAQUE -->
+        <section class="container-fluid px-4 px-lg-5 secao-destaques">
 
-        <!-- ================================
-             CATEGORIAS
-        ================================= -->
+            <div class="titulo-secao">
 
-        <section class="container-fluid px-4 px-lg-5 secao-categorias">
+                <span class="etiqueta-secao">
+                    BABADO NEWS
+                </span>
 
+                <h2>
+                    Em destaque
+                </h2>
 
-            <div class="titulo-secao titulo-categorias">
-
-                <h2>Navegue pelo que te interessa</h2>
+                <p>
+                    Confira assuntos que estão movimentando o Brasil e o mundo.
+                </p>
 
             </div>
 
+
+            <div class="grade-destaques">
+
+
+                <!-- MATÉRIA PRINCIPAL -->
+                <article class="materia-principal">
+
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1000&q=85"
+                        alt="Evento e pessoas acompanhando uma apresentação">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            NOTÍCIAS
+                        </span>
+
+                        <h3>
+                            Os principais acontecimentos que movimentam o Brasil
+                        </h3>
+
+                        <p>
+                            Informação, acontecimentos e temas importantes para acompanhar
+                            as notícias do dia.
+                        </p>
+
+                        <small>
+                            Atualizado hoje
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ENTRETENIMENTO -->
+                <article class="materia-secundaria">
+
+                    <img src="img/resident evil.webp"
+                        alt="Cinema e entretenimento">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            ENTRETENIMENTO
+                        </span>
+
+                        <h3>
+                            "Resident Evil" quebra recorde da franquia com US$ 60 milhões em bilheteria
+                        </h3>
+
+                        <small>
+                            Há 4 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ESPORTES -->
+                <article class="materia-secundaria">
+
+                    <img src="img/diniz.png"
+                        alt="Jogador em campo de futebol">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            ESPORTES
+                        </span>
+
+                        <h3>
+                            Mesmo com a derrota, Diniz permanece no Corinthians
+                        </h3>
+
+                        <small>
+                            Há 5 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- POLÍTICA -->
+                <article class="materia-secundaria">
+
+                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=600&q=85"
+                        alt="Prédio do Congresso Nacional">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            POLÍTICA
+                        </span>
+
+                        <h3>
+                            Governo discute novas medidas para o ambiente digital
+                        </h3>
+
+                        <small>
+                            Há 6 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TECNOLOGIA -->
+                <article class="materia-secundaria">
+
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=85"
+                        alt="Placa eletrônica e tecnologia">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            TECNOLOGIA
+                        </span>
+
+                        <h3>
+                            Inteligência artificial e inovação ganham espaço no mercado
+                        </h3>
+
+                        <small>
+                            Há 8 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CULTURA -->
+                <article class="materia-secundaria">
+
+                    <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=600&q=85"
+                        alt="Evento cultural">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            CULTURA
+                        </span>
+
+                        <h3>
+                            Eventos culturais e atrações para aproveitar o fim de semana
+                        </h3>
+
+                        <small>
+                            Há 9 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEÇÃO DE CATEGORIAS -->
+        <section class="container-fluid px-4 px-lg-5 secao-categorias">
+
+            <div class="titulo-secao titulo-categorias">
+
+                <h2>
+                    Navegue pelo que te interessa
+                </h2>
+
+            </div>
 
 
             <div class="grade-categorias">
 
 
-                <a href="noticias.html" class="caixa-categoria">
+                <!-- POLÍTICA -->
+                <a href="politica.html" class="caixa-categoria">
 
                     <i class="bi bi-globe2 icone-categoria"></i>
 
                     <div>
 
-                        <h3>Notícias</h3>
+                        <h3>
+                            Política
+                        </h3>
 
-                        <p>Brasil e mundo</p>
+                        <p>
+                            Brasil e mundo
+                        </p>
 
                     </div>
 
@@ -514,16 +567,20 @@
                 </a>
 
 
-
+                <!-- ENTRETENIMENTO -->
                 <a href="entretenimento.html" class="caixa-categoria">
 
                     <i class="bi bi-camera-reels icone-categoria"></i>
 
                     <div>
 
-                        <h3>Entretenimento</h3>
+                        <h3>
+                            Entretenimento
+                        </h3>
 
-                        <p>Famosos, TV e cultura</p>
+                        <p>
+                            Famosos, TV e cultura
+                        </p>
 
                     </div>
 
@@ -532,16 +589,20 @@
                 </a>
 
 
-
+                <!-- ESPORTES -->
                 <a href="esportes.html" class="caixa-categoria">
 
                     <i class="bi bi-trophy icone-categoria"></i>
 
                     <div>
 
-                        <h3>Esportes</h3>
+                        <h3>
+                            Esportes
+                        </h3>
 
-                        <p>Resultados e análises</p>
+                        <p>
+                            Resultados e análises
+                        </p>
 
                     </div>
 
@@ -550,16 +611,20 @@
                 </a>
 
 
-
+                <!-- LIFESTYLE -->
                 <a href="lifestyle.html" class="caixa-categoria">
 
                     <i class="bi bi-heart icone-categoria"></i>
 
                     <div>
 
-                        <h3>Lifestyle</h3>
+                        <h3>
+                            Lifestyle
+                        </h3>
 
-                        <p>Moda e bem-estar</p>
+                        <p>
+                            Moda e bem-estar
+                        </p>
 
                     </div>
 
@@ -568,16 +633,20 @@
                 </a>
 
 
-
+                <!-- TECNOLOGIA -->
                 <a href="tecnologia.html" class="caixa-categoria">
 
                     <i class="bi bi-laptop icone-categoria"></i>
 
                     <div>
 
-                        <h3>Tecnologia</h3>
+                        <h3>
+                            Tecnologia
+                        </h3>
 
-                        <p>Inovação e tendências</p>
+                        <p>
+                            Inovação e tendências
+                        </p>
 
                     </div>
 
@@ -585,656 +654,130 @@
 
                 </a>
 
-
             </div>
-
 
         </section>
-
-
-
-        <!-- ================================
-             CONHEÇA TODAS AS PÁGINAS
-        ================================= -->
-
-        <section class="container-fluid px-4 px-lg-5 secao-paginas">
-
-
-            <div class="cabecalho-secao">
-
-
-                <div>
-
-                    <span class="rotulo-secao">
-
-                        EXPLORE O BABADO
-
-                    </span>
-
-
-                    <h2>
-
-                        Conheça todas as páginas
-
-                    </h2>
-
-                </div>
-
-
-                <p>
-
-                    Um site completo, com um visual
-                    harmônico em todas as seções.
-
-                </p>
-
-
-            </div>
-
-
-
-            <div class="grade-paginas">
-
-
-                <!-- NOTÍCIAS -->
-
-                <a href="noticias.html" class="cartao-pagina">
-
-
-                    <div class="miniatura-pagina">
-
-
-                        <div class="miniatura-cabecalho">
-
-                            <strong>BABADO NEWS.</strong>
-
-                            <span>01</span>
-
-                        </div>
-
-
-                        <div class="miniatura-menu">
-
-                            NOTÍCIAS
-
-                        </div>
-
-
-                        <div class="miniatura-destaque">
-
-                            <div class="miniatura-imagem imagem-noticias"></div>
-
-                            <div class="miniatura-texto">
-
-                                <span></span>
-
-                                <span></span>
-
-                                <span></span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="miniatura-conteudo">
-
-                            <div class="miniatura-linha-grande"></div>
-
-                            <div class="miniatura-linha-media"></div>
-
-                            <div class="miniatura-linha-pequena"></div>
-
-                        </div>
-
-
-                        <div class="miniatura-rodape">
-
-                            <span></span>
-
-                            <span></span>
-
-                            <span></span>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="informacoes-pagina">
-
-                        <span class="numero-pagina">01 / EDITORIAL</span>
-
-                        <h3>Notícias</h3>
-
-                        <p>Notícias do Brasil e do mundo.</p>
-
-                        <span class="link-pagina">
-
-                            Explorar
-
-                            <i class="bi bi-arrow-right"></i>
-
-                        </span>
-
-                    </div>
-
-
-                </a>
-
-
-
-                <!-- ENTRETENIMENTO -->
-
-                <a href="entretenimento.html" class="cartao-pagina">
-
-
-                    <div class="miniatura-pagina">
-
-
-                        <div class="miniatura-cabecalho">
-
-                            <strong>BABADO NEWS.</strong>
-
-                            <span>02</span>
-
-                        </div>
-
-
-                        <div class="miniatura-menu">
-
-                            ENTRETENIMENTO
-
-                        </div>
-
-
-                        <div class="miniatura-destaque">
-
-                            <div class="miniatura-imagem imagem-entretenimento"></div>
-
-                            <div class="miniatura-texto">
-
-                                <span></span>
-
-                                <span></span>
-
-                                <span></span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="miniatura-conteudo">
-
-                            <div class="miniatura-linha-grande"></div>
-
-                            <div class="miniatura-linha-media"></div>
-
-                            <div class="miniatura-linha-pequena"></div>
-
-                        </div>
-
-
-                        <div class="miniatura-rodape">
-
-                            <span></span>
-
-                            <span></span>
-
-                            <span></span>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="informacoes-pagina">
-
-                        <span class="numero-pagina">02 / CULTURA</span>
-
-                        <h3>Entretenimento</h3>
-
-                        <p>Famosos, música, TV e cultura.</p>
-
-                        <span class="link-pagina">
-
-                            Explorar
-
-                            <i class="bi bi-arrow-right"></i>
-
-                        </span>
-
-                    </div>
-
-
-                </a>
-
-
-
-                <!-- ESPORTES -->
-
-                <a href="esportes.html" class="cartao-pagina">
-
-
-                    <div class="miniatura-pagina">
-
-
-                        <div class="miniatura-cabecalho">
-
-                            <strong>BABADO NEWS.</strong>
-
-                            <span>03</span>
-
-                        </div>
-
-
-                        <div class="miniatura-menu">
-
-                            ESPORTES
-
-                        </div>
-
-
-                        <div class="miniatura-destaque">
-
-                            <div class="miniatura-imagem imagem-esportes"></div>
-
-                            <div class="miniatura-texto">
-
-                                <span></span>
-
-                                <span></span>
-
-                                <span></span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="miniatura-conteudo">
-
-                            <div class="miniatura-linha-grande"></div>
-
-                            <div class="miniatura-linha-media"></div>
-
-                            <div class="miniatura-linha-pequena"></div>
-
-                        </div>
-
-
-                        <div class="miniatura-rodape">
-
-                            <span></span>
-
-                            <span></span>
-
-                            <span></span>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="informacoes-pagina">
-
-                        <span class="numero-pagina">03 / ESPORTES</span>
-
-                        <h3>Esportes</h3>
-
-                        <p>Futebol, competições e resultados.</p>
-
-                        <span class="link-pagina">
-
-                            Explorar
-
-                            <i class="bi bi-arrow-right"></i>
-
-                        </span>
-
-                    </div>
-
-
-                </a>
-
-
-
-                <!-- LIFESTYLE -->
-
-                <a href="lifestyle.html" class="cartao-pagina">
-
-
-                    <div class="miniatura-pagina">
-
-
-                        <div class="miniatura-cabecalho">
-
-                            <strong>BABADO NEWS.</strong>
-
-                            <span>04</span>
-
-                        </div>
-
-
-                        <div class="miniatura-menu">
-
-                            LIFESTYLE
-
-                        </div>
-
-
-                        <div class="miniatura-destaque">
-
-                            <div class="miniatura-imagem imagem-lifestyle"></div>
-
-                            <div class="miniatura-texto">
-
-                                <span></span>
-
-                                <span></span>
-
-                                <span></span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="miniatura-conteudo">
-
-                            <div class="miniatura-linha-grande"></div>
-
-                            <div class="miniatura-linha-media"></div>
-
-                            <div class="miniatura-linha-pequena"></div>
-
-                        </div>
-
-
-                        <div class="miniatura-rodape">
-
-                            <span></span>
-
-                            <span></span>
-
-                            <span></span>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="informacoes-pagina">
-
-                        <span class="numero-pagina">04 / ESTILO</span>
-
-                        <h3>Lifestyle</h3>
-
-                        <p>Moda, beleza e comportamento.</p>
-
-                        <span class="link-pagina">
-
-                            Explorar
-
-                            <i class="bi bi-arrow-right"></i>
-
-                        </span>
-
-                    </div>
-
-
-                </a>
-
-
-
-                <!-- TECNOLOGIA -->
-
-                <a href="tecnologia.html" class="cartao-pagina">
-
-
-                    <div class="miniatura-pagina">
-
-
-                        <div class="miniatura-cabecalho">
-
-                            <strong>BABADO NEWS.</strong>
-
-                            <span>05</span>
-
-                        </div>
-
-
-                        <div class="miniatura-menu">
-
-                            TECNOLOGIA
-
-                        </div>
-
-
-                        <div class="miniatura-destaque">
-
-                            <div class="miniatura-imagem imagem-tecnologia"></div>
-
-                            <div class="miniatura-texto">
-
-                                <span></span>
-
-                                <span></span>
-
-                                <span></span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="miniatura-conteudo">
-
-                            <div class="miniatura-linha-grande"></div>
-
-                            <div class="miniatura-linha-media"></div>
-
-                            <div class="miniatura-linha-pequena"></div>
-
-                        </div>
-
-
-                        <div class="miniatura-rodape">
-
-                            <span></span>
-
-                            <span></span>
-
-                            <span></span>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="informacoes-pagina">
-
-                        <span class="numero-pagina">05 / INOVAÇÃO</span>
-
-                        <h3>Tecnologia</h3>
-
-                        <p>Inovação, aplicativos e tendências.</p>
-
-                        <span class="link-pagina">
-
-                            Explorar
-
-                            <i class="bi bi-arrow-right"></i>
-
-                        </span>
-
-                    </div>
-
-
-                </a>
-
-
-
-                <!-- SOBRE -->
-
-                <a href="sobre.html" class="cartao-pagina">
-
-
-                    <div class="miniatura-pagina">
-
-
-                        <div class="miniatura-cabecalho">
-
-                            <strong>BABADO NEWS.</strong>
-
-                            <span>06</span>
-
-                        </div>
-
-
-                        <div class="miniatura-menu">
-
-                            SOBRE / CONTATO
-
-                        </div>
-
-
-                        <div class="miniatura-destaque">
-
-                            <div class="miniatura-imagem imagem-sobre"></div>
-
-                            <div class="miniatura-texto">
-
-                                <span></span>
-
-                                <span></span>
-
-                                <span></span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="miniatura-conteudo">
-
-                            <div class="miniatura-linha-grande"></div>
-
-                            <div class="miniatura-linha-media"></div>
-
-                            <div class="miniatura-linha-pequena"></div>
-
-                        </div>
-
-
-                        <div class="miniatura-rodape">
-
-                            <span></span>
-
-                            <span></span>
-
-                            <span></span>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="informacoes-pagina">
-
-                        <span class="numero-pagina">06 / PROJETO</span>
-
-                        <h3>Sobre / Contato</h3>
-
-                        <p>Nossa história, equipe e contato.</p>
-
-                        <span class="link-pagina">
-
-                            Explorar
-
-                            <i class="bi bi-arrow-right"></i>
-
-                        </span>
-
-                    </div>
-
-
-                </a>
-
-
-            </div>
-
-
-        </section>
-
 
     </main>
 
 
+    <!-- NEWSLETTER -->
+    <section class="secao-inscricao">
 
-    <!-- ================================
-         RODAPÉ
-    ================================= -->
+        <div class="conteudo-inscricao">
 
+            <span class="etiqueta-inscricao">
+                BABADO NEWS
+            </span>
+
+            <h2>
+                Fique por dentro!
+            </h2>
+
+            <p>
+                Receba as principais notícias e novidades
+                diretamente no seu e-mail.
+            </p>
+
+
+            <form class="formulario-inscricao" id="formulario-inscricao">
+
+                <div class="campo-inscricao">
+
+                    <label for="email-inscricao">
+                        Seu melhor e-mail
+                    </label>
+
+                    <input type="email"
+                        id="email-inscricao"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required>
+
+                </div>
+
+                <button type="submit">
+                    Inscrever-se
+                </button>
+
+            </form>
+
+
+            <small>
+                Sua informação está segura com a gente.
+            </small>
+
+            <p id="mensagem-inscricao" class="mensagem-inscricao"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
     <footer class="rodape-site">
 
-
         <div class="container-fluid px-4 px-lg-5">
-
 
             <div class="conteudo-rodape">
 
 
+                <!-- MARCA -->
                 <div class="marca-rodape">
 
                     <a href="index.html" class="logo-rodape">
 
                         BABADO
-
                         <span>NEWS.</span>
 
                     </a>
 
-
-                    <p>Informação que te acompanha. Sempre.</p>
+                    <p>
+                        Informação que te acompanha. Sempre.
+                    </p>
 
                 </div>
 
 
-
+                <!-- LINKS -->
                 <div class="links-rodape">
 
-                    <a href="index.html">Início</a>
+                    <a href="index.html">
+                        Início
+                    </a>
 
-                    <a href="noticias.html">Notícias</a>
+                    <a href="politica.html">
+                        Política
+                    </a>
 
-                    <a href="entretenimento.html">Entretenimento</a>
+                    <a href="entretenimento.html">
+                        Entretenimento
+                    </a>
 
-                    <a href="esportes.html">Esportes</a>
+                    <a href="esportes.html">
+                        Esportes
+                    </a>
 
-                    <a href="lifestyle.html">Lifestyle</a>
+                    <a href="lifestyle.html">
+                        Lifestyle
+                    </a>
 
-                    <a href="tecnologia.html">Tecnologia</a>
+                    <a href="tecnologia.html">
+                        Tecnologia
+                    </a>
 
-                    <a href="sobre.html">Sobre</a>
+                    <a href="sobre.html">
+                        Sobre Nós
+                    </a>
+
+                    <a href="contato.html">
+                        Contato
+                    </a>
 
                 </div>
 
 
-
+                <!-- REDES SOCIAIS -->
                 <div class="redes-sociais">
 
                     <a href="#" aria-label="Instagram">
@@ -1257,36 +800,28 @@
 
                 </div>
 
-
             </div>
 
 
-
+            <!-- DIREITOS AUTORAIS -->
             <div class="direitos-autorais">
 
                 © 2026 Babado News. Todos os direitos reservados.
 
             </div>
 
-
         </div>
-
 
     </footer>
 
 
-
-    <!-- BOOTSTRAP JS -->
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
 
 
-    <!-- JAVASCRIPT -->
-
+    <!-- JavaScript do projeto -->
     <script src="js/script.js"></script>
-
 
 </body>
 
