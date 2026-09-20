@@ -1862,3 +1862,71 @@ textarea:focus-visible {
 
     outline-offset: 3px;
 }
+
+/* =================================
+   CORREÇÃO DEFINITIVA DO MENU
+================================= */
+
+@media (min-width: 992px) {
+
+    .menu-site .navbar-collapse {
+        display: flex !important;
+
+        flex-wrap: nowrap !important;
+
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+    .menu-site .navbar-nav {
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        flex-wrap: nowrap !important;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 12px;
+
+        margin-left: auto !important;
+
+        margin-right: 20px !important;
+
+        width: auto;
+
+        flex-shrink: 1;
+    }
+
+    .menu-site .navbar-nav .nav-item {
+        flex-shrink: 0;
+
+        white-space: nowrap;
+    }
+
+    .menu-site .nav-link {
+        font-size: 11px !important;
+
+        white-space: nowrap;
+
+        padding: 12px 0 !important;
+    }
+
+    .menu-site .campo-busca {
+        display: flex;
+
+        flex-shrink: 0;
+
+        width: auto;
+
+        margin-top: 0;
+    }
+
+    .menu-site .campo-busca input {
+        width: 145px;
+    }
+
+}
