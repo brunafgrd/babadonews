@@ -1350,6 +1350,46 @@ textarea {
     font-weight: bold;
 }
 
+/* LIFESTYLE */
+
+.imagem-life {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.life-p {
+    color: black;
+    font-size: 120%;
+    margin: 0 40px;
+    padding: 15px;
+}
+
+.data-life-p {
+    margin: 0 40px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.life-h2 {
+    color: black;
+    margin: 0 40px;
+    padding: 15px;
+}
+
+.life-ul {
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0 55px;
+    padding: 15px;
+}
+
+.life-li {
+    padding: 10px;
+}
 
 @media (max-width: 1199px) {
 
