@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Babado News - As últimas notícias sobre celebridades, shows, cinema, séries e música.">
+    <title>Babado News | Entretenimento</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png?v=2">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho-site">
+        <div class="barra-superior">
+            <div class="data-site">
+                <span id="data-atual"></span>
+            </div>
+            <div class="links-superiores">
+                <a href="#">Assine</a>
+                <span>|</span>
+                <a href="contato.html">Fale conosco</a>
+            </div>
+        </div>
+
+        <div class="cabecalho-conteudo">
+            <div class="cabecalho-manifesto">
+                <span class="linha-destaque"></span>
+                <span>NOTÍCIAS</span>
+                <span>CULTURA</span>
+                <span>ENTRETENIMENTO</span>
+                <span>E MUITO MAIS</span>
+            </div>
+
+            <a href="index.html" class="logo-site">
+                <img src="img/logo.png" alt="Logo Babado News">
+                <p class="slogan-site">
+                    TUDO O QUE IMPORTA, EM UM SÓ LUGAR.
+                </p>
+            </a>
+
+            <div class="cabecalho-descricao">
+                <p>Informação que te acompanha.</p>
+                <strong>Todos os dias.</strong>
+                <span class="linha-destaque"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg menu-site">
+        <div class="container-fluid px-4 px-lg-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse menu-conteudo" id="menuPrincipal">
+                <ul class="navbar-nav menu-links">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="politica.html" class="nav-link">Política</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="entretenimento.html" class="nav-link ativo" aria-current="page">Entretenimento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="esportes.html" class="nav-link">Esportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="lifestyle.html" class="nav-link">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tecnologia.html" class="nav-link">Tecnologia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- BUSCA -->
+                <form class="campo-busca" id="formularioBusca">
+                    <input type="search" id="campoPesquisa" placeholder="Buscar notícias..." aria-label="Buscar notícias">
+                    <button type="submit" aria-label="Pesquisar">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- DESTAQUE PRINCIPAL -->
+        <section class="container-fluid px-4 px-lg-5 secao-destaque">
+            <div class="row g-4">
+
+                <!-- NOTÍCIA PRINCIPAL  -->
+                <div class="col-lg-8">
+                    <article class="noticia-destaque">
+                         <img class="imagem-destaque"
+                            src="img/ensaioanitta2.png"
+                            alt="Ensaios da Anitta">
+
+                        <div class="sobreposicao-destaque"></div>
+
+                        <div class="conteudo-destaque">
+                            <span class="etiqueta-noticia">
+                                MÚSICA & CARNAVAL
+                            </span>
+                            <h1>
+                                Anitta anuncia o "maior ensaio de Carnaval de todos os tempos" no Rio
+                            </h1>
+                            <p>
+                                Com direito a edição especial no Parque Olímpico com mais de 12 horas de duração, os "Ensaios da Anitta" chegam ao ápice com o tema místico "Cosmos" e convidados especiais.
+                            </p>
+                            <a href="entrenoticia1.html" class="botao-materia">
+                                Ler matéria completa
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ÚLTIMAS NOTÍCIAS (SIDEBAR COM CARDS CLICÁVEIS) -->
+                <div class="col-lg-4">
+                    <section class="noticias-laterais">
+                        <div class="titulo-secao">
+                            <h2>Últimas notícias</h2>
+                            <a href="#">
+                                Ver todas
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- CARTÃO 1 INTERATIVO -->
+                        <a href="entrenoticia1.html" class="cartao-noticia-link">
+                            <article class="cartao-noticia">
+                                <img src="img/ensaioanitta.png" alt="Anitta nos Ensaios">
+                                <div class="texto-cartao">
+                                    <span class="categoria-noticia">MÚSICA</span>
+                                    <h3>Ensaios da Anitta: Pré-venda de ingressos abre esta semana</h3>
+                                    <p class="descricao-curta">A maratona do projeto pré-carnavalesco promete passar por mais de 10 capitais no início do ano.</p>
+                                    <small><i class="bi bi-clock me-1"></i>Há 1 hora</small>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- CARTÃO 2 INTERATIVO -->
+                        <a href="entrenoticia2.html" class="cartao-noticia-link">
+                            <article class="cartao-noticia">
+                                <img src="img/rockinrio.png" alt="Palco do Rock in Rio iluminado">
+                                <div class="texto-cartao">
+                                    <span class="categoria-noticia">FESTIVAIS</span>
+                                    <h3>Rock in Rio anuncia novas atrações internacionais</h3>
+                                    <p class="descricao-curta">Organização do evento confirma nomes de peso para o Palco Mundo e Sunset no festival.</p>
+                                    <small><i class="bi bi-clock me-1"></i>Há 3 horas</small>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- CARTÃO 3 INTERATIVO -->
+                        <a href="entrenoticia3.html" class="cartao-noticia-link">
+                            <article class="cartao-noticia">
+                                <img src="img/coraçaoselvagem.png" alt="Sala de cinema cheia assistindo filme">
+                                <div class="texto-cartao">
+                                    <span class="categoria-noticia">CINEMA</span>
+                                    <h3>Estreias da semana: Ação, suspense e produções nacionais</h3>
+                                    <p class="descricao-curta">Confira os principais títulos que acabam de chegar às telonas de todo o Brasil.</p>
+                                    <small><i class="bi bi-clock me-1"></i>Há 5 horas</small>
+                                </div>
+                            </article>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRID DE MATÉRIAS EM DESTAQUE -->
+        <section class="container-fluid px-4 px-lg-5 secao-destaques my-5">
+            <div class="titulo-secao mb-4">
+                <span class="etiqueta-secao">ENTRETENIMENTO & CULTURA POP</span>
+                <h2>Em destaque</h2>
+                <p>Fique por dentro das novidades da música, grandes produções do cinema e séries de streaming.</p>
+            </div>
+
+            <div class="grade-destaques">
+
+                <!-- MATÉRIA PRINCIPAL DO GRID -->
+                <a href="entrenoticia2.html" class="materia-link">
+                    <article class="materia-principal">
+                        <img src="img/rockinrio.png" alt="Multidão no Rock in Rio">
+                        <div class="conteudo-materia">
+                            <span class="categoria-noticia">SHOWS & FESTIVAIS</span>
+                            <h3>Rock in Rio: Saiba como garantir os seus ingressos</h3>
+                            <p>Com um line-up diversificado recheado de atrações do pop, rock e K-pop, o festival se prepara para mais uma edição histórica na Cidade do Rock. Veja dicas de transporte e horários das vendas.</p>
+                            <small><i class="bi bi-clock me-1"></i>Atualizado hoje às 15h20</small>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- MATÉRIA SECUNDÁRIA 1 -->
+                <a href="entrenoticia3.html" class="materia-link">
+                    <article class="materia-secundaria">
+                        <img src="img/aqueda2.png" alt="Cartaz de filme no cinema">
+                        <div class="conteudo-materia">
+                            <span class="categoria-noticia">CINEMA</span>
+                            <h3>Grandes lançamentos chegam aos cinemas neste mês</h3>
+                            <p>Do suspense psicológico às maiores franquias de ação, as bilheterias brasileiras prometem se aquecer com novidades muito aguardadas pelos cinéfilos.</p>
+                            <small><i class="bi bi-clock me-1"></i>Há 4 horas</small>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- MATÉRIA SECUNDÁRIA 2 -->
+                <a href="entrenoticia4.html" class="materia-link">
+                    <article class="materia-secundaria">
+                        <img src="img/magnatasdocrime.png" alt="Pessoa assistindo série no streaming">
+                        <div class="conteudo-materia">
+                            <span class="categoria-noticia">STREAMING</span>
+                            <h3>Novas temporadas de séries premiadas chegam às plataformas</h3>
+                            <p>Confira o calendário completo das maratonas imperdíveis que chegam à Netflix, Max e Prime Video nas próximas semanas.</p>
+                            <small><i class="bi bi-clock me-1"></i>Há 6 horas</small>
+                        </div>
+                    </article>
+                </a> 
+                <a href="entrenoticia5.html" class="materia-link">
+                    <article class="materia-secundaria">
+                        <img src="img/resident evil.webp" alt="ResidentEvil">
+                        <div class="conteudo-materia">
+                            <span class="categoria-noticia">CINEMA</span>
+                            <h3>"Resident Evil" quebra recorde da franquia com US$ 60 milhões em bilheteria</h3>
+                            <p>Confira mais sobre esse recorde e essa franquia tão amada pelos fãs.</p>
+                            <small><i class="bi bi-clock me-1"></i>Há 9 horas</small>
+                        </div>
+                    </article>
+                </a>
+
+           
+
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape-site">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="conteudo-rodape">
+                <div class="marca-rodape">
+                    <a href="index.html" class="logo-rodape">
+                        BABADO <span>NEWS.</span>
+                    </a>
+                    <p>Informação que te acompanha. Sempre.</p>
+                </div>
+                <div class="links-rodape">
+                    <a href="index.html">Início</a>
+                    <a href="politica.html">Política</a>
+                    <a href="entretenimento.html">Entretenimento</a>
+                    <a href="esportes.html">Esportes</a>
+                    <a href="lifestyle.html">Lifestyle</a>
+                    <a href="tecnologia.html">Tecnologia</a>
+                    <a href="sobre.html">Sobre Nós</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                <div class="redes-sociais">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="direitos-autorais">
+                © 2026 Babado News. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript do projeto -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
