@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Babado News - Notícias de política do Brasil e do mundo.">
+
+    <title>Babado News | Política</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png?v=2">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho-site">
+
+        <div class="barra-superior">
+
+            <div class="data-site">
+                <span id="data-atual"></span>
+            </div>
+
+            <div class="links-superiores">
+
+                <a href="#">Assine</a>
+
+                <span>|</span>
+
+                <a href="contato.html">Fale conosco</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="cabecalho-conteudo">
+
+            <div class="cabecalho-manifesto">
+
+                <span class="linha-destaque"></span>
+
+                <span>NOTÍCIAS</span>
+                <span>CULTURA</span>
+                <span>ENTRETENIMENTO</span>
+                <span>E MUITO MAIS</span>
+
+            </div>
+
+
+            <a href="index.html" class="logo-site">
+
+                <img src="img/logo.png" alt="Logo Babado News">
+
+                <p class="slogan-site">
+                    TUDO O QUE IMPORTA, EM UM SÓ LUGAR.
+                </p>
+
+            </a>
+
+
+            <div class="cabecalho-descricao">
+
+                <p>Informação que te acompanha.</p>
+
+                <strong>Todos os dias.</strong>
+
+                <span class="linha-destaque"></span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav class="navbar navbar-expand-lg menu-site">
+
+        <div class="container-fluid px-4 px-lg-5">
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse menu-conteudo" id="menuPrincipal">
+
+                <ul class="navbar-nav menu-links">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="politica.html" class="nav-link ativo" aria-current="page">
+                            Política
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="entretenimento.html" class="nav-link">
+                            Entretenimento
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="esportes.html" class="nav-link">
+                            Esportes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="lifestyle.html" class="nav-link">
+                            Lifestyle
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="tecnologia.html" class="nav-link">
+                            Tecnologia
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">
+                            Sobre Nós
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- BUSCA -->
+
+                <form class="campo-busca" id="formularioBusca">
+
+                    <input type="search"
+                        id="campoPesquisa"
+                        placeholder="Buscar notícias..."
+                        aria-label="Buscar notícias">
+
+                    <button type="submit" aria-label="Pesquisar">
+
+                        <i class="bi bi-search"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main>
+
+        <!-- DESTAQUE DA POLÍTICA -->
+
+        <section class="container-fluid px-4 px-lg-5 secao-destaque">
+
+            <div class="row g-4">
+
+                <!-- NOTÍCIA PRINCIPAL -->
+
+                <div class="col-lg-8">
+
+                    <article class="noticia-destaque">
+
+                        <img class="imagem-destaque"
+                            src="img/politica1.jpg"
+                            alt="Prédio do Congresso Nacional">
+
+                        <div class="sobreposicao-destaque"></div>
+
+
+                        <div class="conteudo-destaque">
+
+                            <span class="etiqueta-noticia">
+                                POLÍTICA
+                            </span>
+
+                            <h1>
+                                Governo discute novas medidas para o ambiente digital
+                            </h1>
+
+                            <p>
+                                Novas propostas entram em discussão e movimentam o cenário
+                                político brasileiro nesta semana.
+                            </p>
+
+                            <a href="#" class="botao-materia">
+
+                                Ler matéria
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="indicadores-destaque">
+
+                            <span class="selecionado"></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ÚLTIMAS NOTÍCIAS -->
+
+                <div class="col-lg-4">
+
+                    <section class="noticias-laterais">
+
+                        <div class="titulo-secao">
+
+                            <h2>
+                                Últimas notícias
+                            </h2>
+
+                            <a href="#">
+                                Ver todas
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <!-- NOTÍCIA 1 -->
+
+                        <article class="cartao-noticia">
+
+                            <img
+                                src="img/politica1.jpg"
+                                alt="Congresso Nacional">
+
+                            <div class="texto-cartao">
+
+                                <span class="categoria-noticia">
+                                    POLÍTICA
+                                </span>
+
+                                <h3>
+                                    Congresso debate novas propostas nesta semana
+                                </h3>
+
+                                <small>
+                                    Há 2 horas
+                                </small>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- NOTÍCIA 2 -->
+
+                        <article class="cartao-noticia">
+
+                            <img
+                                src="img/politica2.jpg"
+                                alt="Pessoas em uma reunião">
+
+                            <div class="texto-cartao">
+
+                                <span class="categoria-noticia">
+                                    POLÍTICA
+                                </span>
+
+                                <h3>
+                                    Governo anuncia novas medidas para os próximos meses
+                                </h3>
+
+                                <small>
+                                    Há 4 horas
+                                </small>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- NOTÍCIA 3 -->
+
+                        <article class="cartao-noticia">
+
+                            <img
+                                src="img/politica3.jpg"
+                                alt="Reunião política">
+
+                            <div class="texto-cartao">
+
+                                <span class="categoria-noticia">
+                                    BRASIL
+                                </span>
+
+                                <h3>
+                                    Debates políticos movimentam a agenda nacional
+                                </h3>
+
+                                <small>
+                                    Há 6 horas
+                                </small>
+
+                            </div>
+
+                        </article>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESTAQUES DE POLÍTICA -->
+
+        <section class="container-fluid px-4 px-lg-5 secao-destaques">
+
+            <div class="titulo-secao">
+
+                <span class="etiqueta-secao">
+                    POLÍTICA
+                </span>
+
+                <h2>
+                    Em destaque
+                </h2>
+
+                <p>
+                    Confira os principais assuntos da política brasileira e internacional.
+                </p>
+
+            </div>
+
+
+            <div class="grade-destaques">
+
+                <!-- MATÉRIA PRINCIPAL -->
+
+                <article class="materia-principal">
+
+                    <img
+                        src="img/politica1.jpg"
+                        alt="Congresso Nacional">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            POLÍTICA
+                        </span>
+
+                        <h3>
+                            Congresso Nacional retoma discussões sobre novas propostas
+                        </h3>
+
+                        <p>
+                            Parlamentares analisam projetos e medidas que podem entrar
+                            na agenda das próximas semanas.
+                        </p>
+
+                        <small>
+                            Atualizado hoje
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GOVERNO -->
+
+                <article class="materia-secundaria">
+
+                    <img
+                        src="img/politica3.jpg"
+                        alt="Reunião">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            GOVERNO
+                        </span>
+
+                        <h3>
+                            Novas medidas entram na pauta do governo
+                        </h3>
+
+                        <small>
+                            Há 4 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CONGRESSO -->
+
+                <article class="materia-secundaria">
+
+                    <img
+                        src="img/politica2.jpg"
+                        alt="Pessoas em reunião">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            CONGRESSO
+                        </span>
+
+                        <h3>
+                            Câmara e Senado discutem novos projetos
+                        </h3>
+
+                        <small>
+                            Há 5 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BRASIL -->
+
+                <article class="materia-secundaria">
+
+                    <img
+                        src="img/politica4.jpg"
+                        alt="Evento público">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            BRASIL
+                        </span>
+
+                        <h3>
+                            Decisões políticas movimentam o cenário nacional
+                        </h3>
+
+                        <small>
+                            Há 6 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MUNDO -->
+
+                <article class="materia-secundaria">
+
+                    <img
+                        src="img/politica5.jpg"
+                        alt="Bandeiras representando diferentes países">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            MUNDO
+                        </span>
+
+                        <h3>
+                            Decisões internacionais repercutem no cenário mundial
+                        </h3>
+
+                        <small>
+                            Há 8 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ELEIÇÕES -->
+
+                <article class="materia-secundaria">
+
+                    <img
+                        src="img/politica5.jpg"
+                        alt="Bandeiras">
+
+                    <div class="conteudo-materia">
+
+                        <span class="categoria-noticia">
+                            ELEIÇÕES
+                        </span>
+
+                        <h3>
+                            Cenário eleitoral começa a movimentar os debates
+                        </h3>
+
+                        <small>
+                            Há 9 horas
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+
+        <section class="container-fluid px-4 px-lg-5 secao-categorias">
+
+            <div class="titulo-secao titulo-categorias">
+
+                <h2>
+                    Navegue por temas de política
+                </h2>
+
+            </div>
+
+
+            <div class="grade-categorias">
+
+                <a href="#" class="caixa-categoria">
+
+                    <i class="bi bi-building icone-categoria"></i>
+
+                    <div>
+
+                        <h3>
+                            Governo
+                        </h3>
+
+                        <p>
+                            Notícias e decisões
+                        </p>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right seta-categoria"></i>
+
+                </a>
+
+
+                <a href="#" class="caixa-categoria">
+
+                    <i class="bi bi-bank icone-categoria"></i>
+
+                    <div>
+
+                        <h3>
+                            Congresso
+                        </h3>
+
+                        <p>
+                            Câmara e Senado
+                        </p>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right seta-categoria"></i>
+
+                </a>
+
+
+                <a href="#" class="caixa-categoria">
+
+                    <i class="bi bi-globe2 icone-categoria"></i>
+
+                    <div>
+
+                        <h3>
+                            Brasil
+                        </h3>
+
+                        <p>
+                            Política nacional
+                        </p>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right seta-categoria"></i>
+
+                </a>
+
+
+                <a href="#" class="caixa-categoria">
+
+                    <i class="bi bi-geo-alt icone-categoria"></i>
+
+                    <div>
+
+                        <h3>
+                            Mundo
+                        </h3>
+
+                        <p>
+                            Política internacional
+                        </p>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right seta-categoria"></i>
+
+                </a>
+
+
+                <a href="#" class="caixa-categoria">
+
+                    <i class="bi bi-check2-square icone-categoria"></i>
+
+                    <div>
+
+                        <h3>
+                            Eleições
+                        </h3>
+
+                        <p>
+                            Cenário eleitoral
+                        </p>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right seta-categoria"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- NEWSLETTER -->
+
+    <section class="secao-inscricao">
+
+        <div class="conteudo-inscricao">
+
+            <span class="etiqueta-inscricao">
+                BABADO NEWS
+            </span>
+
+            <h2>
+                Fique por dentro!
+            </h2>
+
+            <p>
+                Receba as principais notícias e novidades
+                diretamente no seu e-mail.
+            </p>
+
+
+            <form class="formulario-inscricao" id="formulario-inscricao">
+
+                <div class="campo-inscricao">
+
+                    <label for="email-inscricao">
+                        Seu melhor e-mail
+                    </label>
+
+                    <input type="email"
+                        id="email-inscricao"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required>
+
+                </div>
+
+
+                <button type="submit">
+                    Inscrever-se
+                </button>
+
+            </form>
+
+
+            <small>
+                Sua informação está segura com a gente.
+            </small>
+
+            <p id="mensagem-inscricao" class="mensagem-inscricao"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape-site">
+
+        <div class="container-fluid px-4 px-lg-5">
+
+            <div class="conteudo-rodape">
+
+
+                <div class="marca-rodape">
+
+                    <a href="index.html" class="logo-rodape">
+
+                        BABADO
+                        <span>NEWS.</span>
+
+                    </a>
+
+                    <p>
+                        Informação que te acompanha. Sempre.
+                    </p>
+
+                </div>
+
+
+                <div class="links-rodape">
+
+                    <a href="index.html">
+                        Início
+                    </a>
+
+                    <a href="politica.html">
+                        Política
+                    </a>
+
+                    <a href="entretenimento.html">
+                        Entretenimento
+                    </a>
+
+                    <a href="esportes.html">
+                        Esportes
+                    </a>
+
+                    <a href="lifestyle.html">
+                        Lifestyle
+                    </a>
+
+                    <a href="tecnologia.html">
+                        Tecnologia
+                    </a>
+
+                    <a href="sobre.html">
+                        Sobre Nós
+                    </a>
+
+                    <a href="contato.html">
+                        Contato
+                    </a>
+
+                </div>
+
+
+                <div class="redes-sociais">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="direitos-autorais">
+
+                © 2026 Babado News. Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- JavaScript do projeto -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
