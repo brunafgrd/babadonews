@@ -1379,6 +1379,11 @@ textarea {
     padding: 15px;
 }
 
+.life-h3 {
+    color: black;
+    text-align: center;
+}
+
 .life-ul {
     color: black;
     font-size: 120%;
@@ -1389,6 +1394,18 @@ textarea {
 
 .life-li {
     padding: 10px;
+}
+
+.carrossel-lifestyle {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.carrossel-lifestyle .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 @media (max-width: 1199px) {
