@@ -17,7 +17,7 @@ function atualizarData() {
             year: "numeric"
         });
 
-        dataAtual.textContent = "Rio de Janeiro, " + dataFormatada;
+        dataAtual.textContent = "Brasil, " + dataFormatada;
 
     }
 
@@ -63,19 +63,7 @@ if (formularioInscricao) {
 
         }
 
-        const padraoEmail =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!padraoEmail.test(email)) {
-
-            mensagemInscricao.textContent =
-                "Digite um e-mail válido.";
-
-            mensagemInscricao.style.color = "#dc2626";
-
-            return;
-
-        }
+    
 
         mensagemInscricao.textContent =
             "Inscrição realizada com sucesso! Obrigado por acompanhar o Babado News.";
@@ -137,7 +125,7 @@ if (
             texto:
                 "Cantora levou o público ao delírio e confirmou novidades especiais para o próximo ano.",
 
-            link: "entretenimento.html"
+            link: "entrenoticia1.html"
         },
 
         {
@@ -165,7 +153,7 @@ if (
             texto:
                 "Descubra as novidades tecnológicas que estão transformando o nosso dia a dia.",
 
-            link: "tecnologia.html"
+            link: "tecnoticia1.html"
         },
 
         {
@@ -179,7 +167,7 @@ if (
             texto:
                 "Eventos, música e novidades culturais para você acompanhar nessa semana.",
 
-            link: "lifestyle.html"
+            link: "entrenoticia3.html"
         }
 
     ];
