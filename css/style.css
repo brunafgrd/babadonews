@@ -1226,8 +1226,189 @@ textarea {
     line-height: 1.8;
 }
 
+/* TELA INICIAL DE TECNOLOGIA */
+
+.tecnologia {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.titulo-tecnologia {
+    margin-bottom: 30px;
+}
+
+.titulo-tecnologia span {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.titulo-tecnologia h2 {
+    color: #07152f;
+    font-size: 32px;
+    margin-top: 5px;
+}
 
 
+/* CARDS */
+
+.grade-tecnologia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card-tecnologia {
+    background-color: white;
+
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+    color: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.imagem-tecnologia {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.conteudo-card-tecnologia {
+    padding: 22px;
+}
+
+.categoria-tecnologia {
+    color: #2563eb;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.card-tecnologia h3 {
+    color: #07152f;
+
+    font-size: 21px;
+
+    margin: 8px 0 10px;
+}
+
+.card-tecnologia p {
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+.rodape-card-tecnologia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+.card-tecnologia:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.10);
+
+}
+
+/* NOTÍCIAS DE TECNOLOGIA */
+
+.tecno-p {
+    color: black;
+    font-size: 120%;
+    margin: 0 40px;
+    padding: 15px;
+}
+
+.imagem-tecno {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.data-tecno-p {
+    margin: 0 40px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* LIFESTYLE */
+
+.imagem-life {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.life-p {
+    color: black;
+    font-size: 120%;
+    margin: 0 40px;
+    padding: 15px;
+}
+
+.data-life-p {
+    margin: 0 40px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.life-h2 {
+    color: black;
+    margin: 0 40px;
+    padding: 15px;
+}
+
+.life-h3 {
+    color: black;
+    text-align: center;
+}
+
+.life-ul {
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0 55px;
+    padding: 15px;
+}
+
+.life-li {
+    padding: 10px;
+}
+
+.carrossel-lifestyle {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.carrossel-lifestyle .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 @media (max-width: 1199px) {
 
