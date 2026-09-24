@@ -139,7 +139,7 @@ if (
             texto:
                 "Novos jogadores com oportunidade de observação.",
 
-            link: "esportes.html"
+            link: "esportenoticia1.html"
         },
 
         {
