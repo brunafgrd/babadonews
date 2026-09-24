@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,17 +13,25 @@
 
     <!-- Ícone e estilos utilizados no projeto -->
     <link rel="icon" type="image/png" href="img/favicon.png?v=2">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
 <!-- Cabeçalho do site -->
+
 <header class="cabecalho-site">
+
     <div class="barra-superior">
+
         <div class="data-site">
             <span id="data-atual"></span>
         </div>
@@ -30,165 +41,269 @@
             <span>|</span>
             <a href="contato.html">Fale conosco</a>
         </div>
+
     </div>
 
     <div class="cabecalho-conteudo">
 
         <!-- Informações apresentadas no lado esquerdo do cabeçalho -->
+
         <div class="cabecalho-manifesto">
+
             <span class="linha-destaque"></span>
             <span>NOTÍCIAS</span>
             <span>CULTURA</span>
             <span>ENTRETENIMENTO</span>
             <span>E MUITO MAIS</span>
+
         </div>
 
         <!-- Logo do Babado News -->
+
         <a href="index.html" class="logo-site">
+
             <img src="img/logo.png" alt="Logo Babado News">
+
             <p class="slogan-site">TUDO O QUE IMPORTA, EM UM SÓ LUGAR.</p>
+
         </a>
 
         <!-- Informações apresentadas no lado direito do cabeçalho -->
+
         <div class="cabecalho-descricao">
+
             <p>Informação que te acompanha.</p>
+
             <strong>Todos os dias.</strong>
+
             <span class="linha-destaque"></span>
+
         </div>
+
     </div>
+
 </header>
 
+
 <!-- Menu de navegação -->
+
 <nav class="navbar navbar-expand-lg menu-site">
+
     <div class="container-fluid px-4 px-lg-5">
 
         <!-- Botão do menu para telas menores -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menu">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
         <div class="collapse navbar-collapse menu-conteudo" id="menuPrincipal">
 
             <!-- Links das páginas do site -->
+
             <ul class="navbar-nav menu-links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="politica.html">Política</a></li>
-                <li><a href="entretenimento.html">Entretenimento</a></li>
-                <li><a href="esportes.html" class="active">Esportes</a></li>
-                <li><a href="lifestyle.html">Lifestyle</a></li>
-                <li><a href="tecnologia.html">Tecnologia</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="politica.html" class="nav-link">Política</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="entretenimento.html" class="nav-link">Entretenimento</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="esportes.html" class="nav-link ativo">Esportes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="lifestyle.html" class="nav-link">Lifestyle</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="tecnologia.html" class="nav-link">Tecnologia</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+
             </ul>
+
         </div>
+
     </div>
+
 </nav>
 
+
 <!-- Conteúdo principal da notícia -->
+
 <main class="container my-5">
+
     <article class="materia-completa mx-auto" style="max-width: 900px;">
 
-        <!-- Categoria da notícia -->
-        <span class="etiqueta-noticia">TÊNIS</span>
+        <!-- Categoria, título e resumo -->
 
-        <!-- Título da notícia -->
-        <h1 class="mt-3">
-            João Fonseca se emociona com apoio do ídolo Guga e revela estar abaixo fisicamente e mentalmente
-        </h1>
+        <section class="container-fluid px-4 px-lg-5 secao-destaques">
 
-        <!-- Resumo da notícia -->
-        <p class="lead">
-            João Fonseca falou sobre o apoio de Guga após vitória pela Copa Davis e comentou seu momento físico e mental.
-        </p>
+            <div class="titulo-secao">
 
-        <!-- Data e autor -->
-        <div class="mb-4 text-muted">
-            <small>
-                <i class="bi bi-calendar3 me-1"></i>19/09/2026
-            </small>
+                <span class="etiqueta-secao">TÊNIS</span>
 
-            <small class="ms-3">
-                <i class="bi bi-person me-1"></i>Redação Babado News
-            </small>
-        </div>
+                <h2>
+                    João Fonseca se emociona com apoio do ídolo Guga e revela estar abaixo fisicamente e mentalmente
+                </h2>
 
-        <!-- Imagem principal da notícia -->
-        <figure class="mb-4">
-            <img src="img/esportes5.jpg" class="img-fluid rounded" alt="João Fonseca durante partida de tênis">
+                <p>
+                    João Fonseca falou sobre o apoio de Guga após vitória pela Copa Davis e comentou seu momento físico e mental.
+                </p>
 
-            <figcaption class="text-center text-muted mt-2">
-                João Fonseca é um dos principais nomes do tênis brasileiro.
-            </figcaption>
-        </figure>
+            </div>
+
+            <img
+                src="img/esportes5.jpg"
+                class="imagem-tecno"
+                alt="João Fonseca durante partida de tênis">
+
+        </section>
+
+
+        <!-- Data da notícia -->
+
+        <section>
+
+            <div>
+
+                <p class="data-life-p">
+                    Rio: 19/09/2026
+                </p>
+
+            </div>
+
+        </section>
+
 
         <!-- Texto da notícia -->
-        <div class="conteudo-texto">
 
-            <p>
+        <section class="life-section">
+
+            <p class="life-p">
                 João Fonseca conseguiu uma vitória importante pela Copa Davis ao superar o suíço Dominik Stricker. Após a partida, o jovem tenista brasileiro falou sobre o momento que está vivendo dentro e fora das quadras.
             </p>
 
-            <p>
+            <p class="life-p">
                 Um dos momentos que mais emocionou João foi o apoio recebido de Gustavo Kuerten, o Guga, ídolo histórico do tênis brasileiro. A presença e as palavras de Guga tiveram um significado especial para o jogador.
             </p>
 
-            <p>
+            <p class="life-p">
                 João também revelou que não está se sentindo 100% fisicamente e mentalmente. O tenista comentou sobre as dificuldades enfrentadas recentemente e reconheceu que ainda precisa recuperar sua melhor condição.
             </p>
 
-            <p>
+            <p class="life-p">
                 Mesmo passando por esse momento, João Fonseca conseguiu contribuir para a equipe brasileira na Copa Davis e mostrou sua determinação durante a partida.
             </p>
 
-            <p>
+            <p class="life-p">
                 O apoio de Guga e a vitória podem representar um incentivo importante para João seguir trabalhando e buscar uma recuperação física e mental antes dos próximos desafios da temporada.
             </p>
-        </div>
 
-        <!-- Botão para voltar à página de esportes -->
-        <hr class="my-5">
-
-        <a href="esportes.html" class="btn btn-outline-dark">
-            <i class="bi bi-arrow-left me-2"></i>Voltar para Esportes
-        </a>
+        </section>
 
     </article>
+
 </main>
 
+
 <!-- Área de inscrição da newsletter -->
+
 <section class="secao-inscricao">
+
     <div class="conteudo-inscricao">
+
         <span class="etiqueta-inscricao">BABADO NEWS</span>
+
         <h2>Fique por dentro!</h2>
-        <p>Receba as principais notícias e novidades diretamente no seu e-mail.</p>
+
+        <p>
+            Receba as principais notícias e novidades diretamente no seu e-mail.
+        </p>
 
         <form class="formulario-inscricao" id="formulario-inscricao">
+
             <div class="campo-inscricao">
+
                 <label for="email-inscricao">Seu melhor e-mail</label>
-                <input type="email" id="email-inscricao" name="email" placeholder="Digite seu e-mail" required>
+
+                <input
+                    type="email"
+                    id="email-inscricao"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+
             </div>
 
-            <button type="submit">Inscrever-se</button>
+            <button type="submit">
+                Inscrever-se
+            </button>
+
         </form>
 
-        <small>Sua informação está segura com a gente.</small>
+        <small>
+            Sua informação está segura com a gente.
+        </small>
+
         <p id="mensagem-inscricao" class="mensagem-inscricao"></p>
+
     </div>
+
 </section>
 
+
 <!-- Rodapé do site -->
+
 <footer class="rodape-site">
+
     <div class="container-fluid px-4 px-lg-5">
+
         <div class="conteudo-rodape">
 
             <!-- Logo e descrição -->
+
             <div class="marca-rodape">
-                <a href="index.html" class="logo-rodape">BABADO <span>NEWS.</span></a>
-                <p>Informação que te acompanha. Sempre.</p>
+
+                <a href="index.html" class="logo-rodape">
+                    BABADO <span>NEWS.</span>
+                </a>
+
+                <p>
+                    Informação que te acompanha. Sempre.
+                </p>
+
             </div>
 
+
             <!-- Links do rodapé -->
+
             <div class="links-rodape">
+
                 <a href="index.html">Início</a>
                 <a href="politica.html">Política</a>
                 <a href="entretenimento.html">Entretenimento</a>
@@ -197,26 +312,50 @@
                 <a href="tecnologia.html">Tecnologia</a>
                 <a href="sobre.html">Sobre Nós</a>
                 <a href="contato.html">Contato</a>
+
             </div>
+
 
             <!-- Redes sociais -->
+
             <div class="redes-sociais">
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
             </div>
+
         </div>
+
 
         <!-- Direitos autorais -->
+
         <div class="direitos-autorais">
+
             © 2026 Babado News. Todos os direitos reservados.
+
         </div>
+
     </div>
+
 </footer>
 
+
 <!-- Scripts do Bootstrap e do projeto -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
