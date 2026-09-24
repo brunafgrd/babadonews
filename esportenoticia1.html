@@ -1,222 +1,430 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Informações da página -->
-    <meta name="description" content="Babado News - Notícias esportivas.">
-    <title>Flamengo vence e aumenta chances de título | Babado News</title>
+```
+<meta charset="UTF-8">
 
-    <!-- Ícone e estilos utilizados no projeto -->
-    <link rel="icon" type="image/png" href="img/favicon.png?v=2">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Babado News - Notícias de esportes do Brasil e do mundo.">
+
+<title>Babado News | Esportes</title>
+
+<link rel="icon" type="image/png" href="img/favicon.png?v=2">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+<!-- Fonte Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+<!-- CSS do projeto -->
+<link rel="stylesheet" href="css/style.css">
+```
+
 </head>
 
 <body>
 
-<!-- Cabeçalho do site -->
+```
+<!-- CABEÇALHO -->
+
 <header class="cabecalho-site">
+
     <div class="barra-superior">
+
         <div class="data-site">
             <span id="data-atual"></span>
         </div>
 
         <div class="links-superiores">
+
             <a href="#">Assine</a>
+
             <span>|</span>
+
             <a href="contato.html">Fale conosco</a>
+
         </div>
+
     </div>
+
 
     <div class="cabecalho-conteudo">
 
-        <!-- Informações apresentadas no lado esquerdo do cabeçalho -->
         <div class="cabecalho-manifesto">
+
             <span class="linha-destaque"></span>
+
             <span>NOTÍCIAS</span>
             <span>CULTURA</span>
             <span>ENTRETENIMENTO</span>
             <span>E MUITO MAIS</span>
+
         </div>
 
-        <!-- Logo do Babado News -->
+
         <a href="index.html" class="logo-site">
+
             <img src="img/logo.png" alt="Logo Babado News">
-            <p class="slogan-site">TUDO O QUE IMPORTA, EM UM SÓ LUGAR.</p>
+
+            <p class="slogan-site">
+                TUDO O QUE IMPORTA, EM UM SÓ LUGAR.
+            </p>
+
         </a>
 
-        <!-- Informações apresentadas no lado direito do cabeçalho -->
+
         <div class="cabecalho-descricao">
+
             <p>Informação que te acompanha.</p>
+
             <strong>Todos os dias.</strong>
+
             <span class="linha-destaque"></span>
+
         </div>
+
     </div>
+
 </header>
 
-<!-- Menu de navegação -->
+
+<!-- MENU -->
+
 <nav class="navbar navbar-expand-lg menu-site">
+
     <div class="container-fluid px-4 px-lg-5">
 
-        <!-- Botão do menu para telas menores -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menu">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
-        <div class="collapse navbar-collapse menu-conteudo" id="menuPrincipal">
 
-            <!-- Links das páginas do site -->
+        <div class="collapse navbar-collapse menu-conteudo"
+            id="menuPrincipal">
+
             <ul class="navbar-nav menu-links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="politica.html">Política</a></li>
-                <li><a href="entretenimento.html">Entretenimento</a></li>
-                <li><a href="esportes.html" class="active">Esportes</a></li>
-                <li><a href="lifestyle.html">Lifestyle</a></li>
-                <li><a href="tecnologia.html">Tecnologia</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Início
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="politica.html" class="nav-link">
+                        Política
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="entretenimento.html" class="nav-link">
+                        Entretenimento
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="esportes.html" class="nav-link ativo">
+                        Esportes
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="lifestyle.html" class="nav-link">
+                        Lifestyle
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="tecnologia.html" class="nav-link">
+                        Tecnologia
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">
+                        Sobre Nós
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">
+                        Contato
+                    </a>
+                </li>
+
             </ul>
+
         </div>
+
     </div>
+
 </nav>
 
-<!-- Conteúdo principal da notícia -->
+
+<!-- CONTEÚDO DA NOTÍCIA -->
+
 <main class="container my-5">
-    <article class="materia-completa mx-auto" style="max-width: 900px;">
 
-        <!-- Categoria da notícia -->
-        <span class="etiqueta-noticia">ESPORTES</span>
+    <article class="materia-completa mx-auto"
+        style="max-width: 900px;">
 
-        <!-- Título da notícia -->
-        <h1 class="mt-3">
-            Veja as chances de título do Flamengo após vitória sobre o Bragantino
-        </h1>
+        <section class="container-fluid px-4 px-lg-5 secao-destaques">
 
-        <!-- Resumo da notícia -->
-        <p class="lead">
-            Flamengo venceu o Bragantino por 2 a 1 e aumentou suas chances de conquistar o Campeonato Brasileiro.
-        </p>
+            <div class="titulo-secao">
 
-        <!-- Data e autor -->
-        <div class="mb-4 text-muted">
-            <small>
-                <i class="bi bi-calendar3 me-1"></i>21/09/2026
-            </small>
+                <span class="etiqueta-secao">
+                    ESPORTES
+                </span>
 
-            <small class="ms-3">
-                <i class="bi bi-person me-1"></i>Redação Babado News
-            </small>
-        </div>
+                <h2>
+                    Confira os convocados para amistoso da seleção brasileira
+                </h2>
 
-        <!-- Imagem principal da notícia -->
-        <figure class="mb-4">
-            <img src="img/esportes1.jpg" class="img-fluid rounded" alt="Flamengo durante partida contra o Bragantino">
+                <p>
+                    Novos jogadores ganham oportunidade de observação no início do novo ciclo da Seleção Brasileira.
+                </p>
 
-            <figcaption class="text-center text-muted mt-2">
-                Flamengo venceu o Bragantino por 2 a 1 pelo Campeonato Brasileiro.
-            </figcaption>
-        </figure>
+            </div>
 
-        <!-- Texto da notícia -->
-        <div class="conteudo-texto">
 
-            <p>
-                O Flamengo venceu o Bragantino por 2 a 1 e ganhou força na disputa pelo título do Campeonato Brasileiro. O resultado aconteceu na mesma rodada em que o Palmeiras empatou com o Grêmio.
+            <img src="img/esportes1.jpg"
+                class="imagem-tecno"
+                alt="Seleção Brasileira">
+
+        </section>
+
+
+        <section>
+
+            <div>
+
+                <p class="data-life-p">
+                    Rio: 21/09/2026
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="life-section">
+
+            <p class="life-p">
+                O técnico Carlo Ancelotti convocou 26 jogadores para os próximos amistosos da Seleção Brasileira contra a Austrália e a Índia. A lista marca os primeiros compromissos do Brasil após a Copa do Mundo e inicia um novo ciclo da equipe.
             </p>
 
-            <p>
-                Com os resultados, o Flamengo passou a ter uma vantagem importante na projeção matemática para conquistar o campeonato. Segundo dados citados pelo levantamento da Universidade Federal de Minas Gerais (UFMG), o clube carioca chegou a <strong>76,8% de chances de título</strong>.
+            <p class="life-p">
+                A convocação conta com jogadores experientes e também com nomes que ganharam uma oportunidade de defender a Seleção principal. A comissão técnica vem acompanhando partidas do Campeonato Brasileiro, da Copa do Brasil, das competições sul-americanas e dos campeonatos europeus para observar novos atletas.
             </p>
 
-            <p>
-                O Palmeiras aparece na sequência, com <strong>21,3%</strong> de possibilidade de conquistar o campeonato. O Athletico-PR também está na disputa, mas com uma porcentagem menor, de <strong>1,1%</strong>.
+            <p class="life-p">
+                Entre os convocados estão jogadores como Vinícius Júnior, Raphinha, Bruno Guimarães, Gabriel Magalhães e Marquinhos, além de jovens que buscam espaço na equipe nacional. A presença de novos nomes faz parte do processo de renovação planejado para os próximos anos.
             </p>
 
-            <p>
-                Ainda restavam <strong>10 partidas</strong> para o fim do campeonato naquele momento. Por isso, apesar da vantagem nas projeções, a disputa ainda dependia dos próximos resultados das equipes.
+            <p class="life-p">
+                Os amistosos serão disputados contra a Austrália nos dias 25 e 29 de setembro, em Townsville e Brisbane. Depois, o Brasil enfrentará a Índia no dia 3 de outubro, em Calcutá, no primeiro confronto da história entre as duas seleções principais.
             </p>
 
-            <p>
-                A vitória sobre o Bragantino, portanto, deixou o Flamengo em uma situação importante na reta final da competição e aumentou a expectativa para as próximas rodadas.
+            <p class="life-p">
+                A lista ainda passou por mudanças antes da apresentação da equipe. Martinelli foi chamado para substituir João Pedro, que sofreu uma lesão, enquanto Vanderson entrou no lugar de Wesley, também cortado por problemas físicos.
             </p>
-        </div>
 
-        <!-- Botão para voltar à página de esportes -->
-        <hr class="my-5">
 
-        <a href="esportes.html" class="btn btn-outline-dark">
-            <i class="bi bi-arrow-left me-2"></i>Voltar para Esportes
-        </a>
+            <h2 class="life-h2">
+                Novas oportunidades na Seleção
+            </h2>
+
+            <p class="life-p">
+                A convocação abre espaço para que novos jogadores sejam observados por Ancelotti durante os amistosos. A comissão técnica terá a oportunidade de avaliar diferentes opções e começar a definir a base da Seleção para o novo ciclo.
+            </p>
+
+        </section>
 
     </article>
+
 </main>
 
-<!-- Área de inscrição da newsletter -->
-<section class="secao-inscricao">
-    <div class="conteudo-inscricao">
-        <span class="etiqueta-inscricao">BABADO NEWS</span>
-        <h2>Fique por dentro!</h2>
-        <p>Receba as principais notícias e novidades diretamente no seu e-mail.</p>
 
-        <form class="formulario-inscricao" id="formulario-inscricao">
+<!-- NEWSLETTER -->
+
+<section class="secao-inscricao">
+
+    <div class="conteudo-inscricao">
+
+        <span class="etiqueta-inscricao">
+            BABADO NEWS
+        </span>
+
+        <h2>
+            Fique por dentro!
+        </h2>
+
+        <p>
+            Receba as principais notícias e novidades
+            diretamente no seu e-mail.
+        </p>
+
+
+        <form class="formulario-inscricao"
+            id="formulario-inscricao">
+
             <div class="campo-inscricao">
-                <label for="email-inscricao">Seu melhor e-mail</label>
-                <input type="email" id="email-inscricao" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="email-inscricao">
+                    Seu melhor e-mail
+                </label>
+
+                <input type="email"
+                    id="email-inscricao"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+
             </div>
 
-            <button type="submit">Inscrever-se</button>
+
+            <button type="submit">
+                Inscrever-se
+            </button>
+
         </form>
 
-        <small>Sua informação está segura com a gente.</small>
-        <p id="mensagem-inscricao" class="mensagem-inscricao"></p>
+
+        <small>
+            Sua informação está segura com a gente.
+        </small>
+
+        <p id="mensagem-inscricao"
+            class="mensagem-inscricao"></p>
+
     </div>
+
 </section>
 
-<!-- Rodapé do site -->
+
+<!-- RODAPÉ -->
+
 <footer class="rodape-site">
+
     <div class="container-fluid px-4 px-lg-5">
+
         <div class="conteudo-rodape">
 
-            <!-- Logo e descrição -->
             <div class="marca-rodape">
-                <a href="index.html" class="logo-rodape">BABADO <span>NEWS.</span></a>
-                <p>Informação que te acompanha. Sempre.</p>
+
+                <a href="index.html"
+                    class="logo-rodape">
+
+                    BABADO
+                    <span>NEWS.</span>
+
+                </a>
+
+                <p>
+                    Informação que te acompanha. Sempre.
+                </p>
+
             </div>
 
-            <!-- Links do rodapé -->
+
             <div class="links-rodape">
-                <a href="index.html">Início</a>
-                <a href="politica.html">Política</a>
-                <a href="entretenimento.html">Entretenimento</a>
-                <a href="esportes.html">Esportes</a>
-                <a href="lifestyle.html">Lifestyle</a>
-                <a href="tecnologia.html">Tecnologia</a>
-                <a href="sobre.html">Sobre Nós</a>
-                <a href="contato.html">Contato</a>
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="politica.html">
+                    Política
+                </a>
+
+                <a href="entretenimento.html">
+                    Entretenimento
+                </a>
+
+                <a href="esportes.html">
+                    Esportes
+                </a>
+
+                <a href="lifestyle.html">
+                    Lifestyle
+                </a>
+
+                <a href="tecnologia.html">
+                    Tecnologia
+                </a>
+
+                <a href="sobre.html">
+                    Sobre Nós
+                </a>
+
+                <a href="contato.html">
+                    Contato
+                </a>
+
             </div>
 
-            <!-- Redes sociais -->
+
             <div class="redes-sociais">
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
             </div>
+
         </div>
 
-        <!-- Direitos autorais -->
+
         <div class="direitos-autorais">
+
             © 2026 Babado News. Todos os direitos reservados.
+
         </div>
+
     </div>
+
 </footer>
 
-<!-- Scripts do Bootstrap e do projeto -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- JavaScript do projeto -->
+
 <script src="js/script.js"></script>
+```
 
 </body>
+
 </html>
