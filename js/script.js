@@ -1,4 +1,3 @@
-
 /* =================================
    DATA DO SITE
 ================================= */
@@ -23,10 +22,8 @@ function atualizarData() {
 
 }
 
-// Mostra a data assim que a página é carregada
 atualizarData();
 
-// Atualiza a data automaticamente a cada minuto
 setInterval(atualizarData, 60000);
 
 
@@ -63,8 +60,6 @@ if (formularioInscricao) {
 
         }
 
-    
-
         mensagemInscricao.textContent =
             "Inscrição realizada com sucesso! Obrigado por acompanhar o Babado News.";
 
@@ -77,11 +72,11 @@ if (formularioInscricao) {
 }
 
 
+
 /* =================================
    CARROSSEL DE NOTÍCIAS
 ================================= */
 
-// Seleciona os elementos do destaque
 const imagemDestaque =
     document.querySelector(".imagem-destaque");
 
@@ -101,7 +96,6 @@ const indicadores =
     document.querySelectorAll(".indicadores-destaque span");
 
 
-// Verifica se o carrossel existe na página
 if (
     imagemDestaque &&
     etiquetaNoticia &&
@@ -111,7 +105,11 @@ if (
     indicadores.length > 0
 ) {
 
-    // Notícias do carrossel
+
+    /* =================================
+       NOTÍCIAS DO CARROSSEL
+    ================================= */
+
     const noticias = [
 
         {
@@ -123,10 +121,12 @@ if (
                 "Anitta agita ensaio no Rio e anuncia novidades para 2027",
 
             texto:
-                "Cantora levou o público ao delírio e confirmou novidades especiais para o próximo ano.",
+                "Anitta agita ensaio no Rio e anuncia novidades para 2027.",
 
-            link: "entrenoticia1.html"
+            link:
+                "entretenimento.html"
         },
+
 
         {
             categoria: "ESPORTES",
@@ -137,10 +137,12 @@ if (
                 "Confira os convocados para amistoso da seleção brasileira.",
 
             texto:
-                "Novos jogadores com oportunidade de observação.",
+                "Confira as novidades e os convocados para o próximo amistoso da seleção brasileira.",
 
-            link: "esportenoticia1.html"
+            link:
+                "esportes.html"
         },
+
 
         {
             categoria: "TECNOLOGIA",
@@ -151,10 +153,12 @@ if (
                 "Tecnologia e inovação ganham destaque em 2026",
 
             texto:
-                "Descubra as novidades tecnológicas que estão transformando o nosso dia a dia.",
+                "Tecnologia e inovação ganham cada vez mais espaço e transformam o cotidiano.",
 
-            link: "tecnoticia1.html"
+            link:
+                "tecnologia.html"
         },
+
 
         {
             categoria: "CULTURA",
@@ -165,41 +169,55 @@ if (
                 "Cultura e entretenimento movimentam o fim de semana",
 
             texto:
-                "Eventos, música e novidades culturais para você acompanhar nessa semana.",
+                "Confira os principais acontecimentos de cultura e entretenimento.",
 
-            link: "entrenoticia3.html"
+            link:
+                "lifestyle.html"
         }
 
     ];
 
 
-    // Controla a notícia atual
     let noticiaAtual = 0;
 
 
-    // Função para mostrar uma notícia
+
+    /* =================================
+       MOSTRAR NOTÍCIA
+    ================================= */
+
     function mostrarNoticia(indice) {
 
         const noticia = noticias[indice];
 
-        imagemDestaque.src = noticia.imagem;
+        if (!noticia) {
+            return;
+        }
 
-        imagemDestaque.alt = noticia.titulo;
+
+        imagemDestaque.src =
+            noticia.imagem;
+
+        imagemDestaque.alt =
+            noticia.titulo;
+
 
         etiquetaNoticia.textContent =
             noticia.categoria;
 
+
         tituloDestaque.textContent =
             noticia.titulo;
 
+
         textoDestaque.textContent =
             noticia.texto;
+
 
         botaoMateria.href =
             noticia.link;
 
 
-        // Atualiza os pontinhos
         indicadores.forEach(function(indicador, index) {
 
             indicador.classList.toggle(
@@ -212,7 +230,11 @@ if (
     }
 
 
-    // Permite clicar nos pontinhos
+
+    /* =================================
+       CLIQUE NOS INDICADORES
+    ================================= */
+
     indicadores.forEach(function(indicador, index) {
 
         indicador.style.cursor = "pointer";
@@ -228,7 +250,19 @@ if (
     });
 
 
-    // Passa automaticamente para a próxima notícia
+
+    /* =================================
+       INICIAR CARROSSEL
+    ================================= */
+
+    mostrarNoticia(noticiaAtual);
+
+
+
+    /* =================================
+       TROCA AUTOMÁTICA
+    ================================= */
+
     setInterval(function() {
 
         noticiaAtual++;
@@ -244,6 +278,7 @@ if (
     }, 6000);
 
 }
+
 
 
 /* =================================
@@ -279,7 +314,7 @@ if (formularioContato) {
         evento.preventDefault();
 
 
-        // LIMPAR MENSAGENS ANTERIORES
+        /* LIMPAR MENSAGENS */
 
         document.querySelector("#erro-nome").textContent = "";
 
@@ -310,7 +345,7 @@ if (formularioContato) {
         let formularioValido = true;
 
 
-        // VALIDAÇÃO DO NOME
+        /* VALIDAÇÃO DO NOME */
 
         if (campoNome.value.trim().length < 3) {
 
@@ -324,7 +359,7 @@ if (formularioContato) {
         }
 
 
-        // VALIDAÇÃO DO E-MAIL
+        /* VALIDAÇÃO DO E-MAIL */
 
         const padraoEmail =
             /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -341,7 +376,7 @@ if (formularioContato) {
         }
 
 
-        // VALIDAÇÃO DO ASSUNTO
+        /* VALIDAÇÃO DO ASSUNTO */
 
         if (campoAssunto.value === "") {
 
@@ -355,7 +390,7 @@ if (formularioContato) {
         }
 
 
-        // VALIDAÇÃO DA MENSAGEM
+        /* VALIDAÇÃO DA MENSAGEM */
 
         if (campoMensagem.value.trim().length < 10) {
 
@@ -369,7 +404,7 @@ if (formularioContato) {
         }
 
 
-        // VALIDAÇÃO DO CHECKBOX
+        /* VALIDAÇÃO DO CHECKBOX */
 
         if (!campoAceite.checked) {
 
@@ -381,7 +416,7 @@ if (formularioContato) {
         }
 
 
-        // VERIFICAR RESULTADO
+        /* RESULTADO */
 
         if (!formularioValido) {
 
@@ -395,8 +430,7 @@ if (formularioContato) {
         }
 
 
-        // SIMULAÇÃO DE ENVIO
-        // Nesta versão, não existe conexão com um servidor.
+        /* SUCESSO */
 
         mensagemRetorno.textContent =
             "Mensagem validada com sucesso! " +
@@ -405,8 +439,6 @@ if (formularioContato) {
 
         mensagemRetorno.classList.add("sucesso");
 
-
-        // LIMPAR O FORMULÁRIO
 
         formularioContato.reset();
 

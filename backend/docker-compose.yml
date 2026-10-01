@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: babadonews-postgres
+    environment:
+      POSTGRES_DB: babadonews
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: .
+    container_name: babadonews-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
