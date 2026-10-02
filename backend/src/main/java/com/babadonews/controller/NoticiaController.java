@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.validation.Valid;
+
 import com.babadonews.model.Noticia;
 import com.babadonews.service.NoticiaService;
 @CrossOrigin(origins = "*")
@@ -31,7 +33,7 @@ public class NoticiaController {
     }
 
     @PostMapping
-    public Noticia cadastrar(@RequestBody Noticia noticia) {
+    public Noticia cadastrar(@Valid @RequestBody Noticia noticia) {
         return service.cadastrar(noticia);
     }
 
@@ -41,7 +43,7 @@ public class NoticiaController {
     }
 
     @PutMapping("/{id}")
-    public Noticia atualizar(@PathVariable Long id, @RequestBody Noticia noticia) {
+    public Noticia atualizar(@PathVariable Long id, @Valid @RequestBody Noticia noticia) {
         return service.atualizar(id, noticia);
     }
 

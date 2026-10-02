@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Noticia {
@@ -12,9 +13,16 @@ public class Noticia {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "O titulo é obrigatório")
     private String titulo;
+
+    @NotBlank(message = "O conteudo é obrigatório")
     private String conteudo;
+
+    @NotBlank(message = "A imagem é obrigatória")
     private String imagem;
+
+    @NotBlank(message = "A categoria é obrigatória")
     private String categoria;
 
     public Long getId() {
