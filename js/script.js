@@ -110,7 +110,7 @@ if (
        NOTÍCIAS DO CARROSSEL
     ================================= */
 
-    const noticias = [
+    let noticias = [
 
         {
             categoria: "ENTRETENIMENTO",
@@ -256,6 +256,29 @@ if (
     ================================= */
 
     mostrarNoticia(noticiaAtual);
+
+
+
+    /* =================================
+       NOTÍCIAS VINDAS DA API
+    ================================= */
+
+    /* Chamada pelo js/api.js quando a API responde.
+       As notícias acima continuam valendo se ela estiver fora do ar. */
+
+    window.atualizarCarrossel = function(novasNoticias) {
+
+        if (!Array.isArray(novasNoticias) || novasNoticias.length === 0) {
+            return;
+        }
+
+        noticias = novasNoticias.slice(0, indicadores.length);
+
+        noticiaAtual = 0;
+
+        mostrarNoticia(noticiaAtual);
+
+    };
 
 
 

@@ -8,6 +8,11 @@ services:
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d babadonews"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
   backend:
     build: .
@@ -15,4 +20,25 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: babadonews-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  seed:
+    image: curlimages/curl:latest
+    container_name: babadonews-seed
+    volumes:
+      - ./seed:/seed:ro
+    entrypoint: ["sh", "-c", "tr -d '\\r' < /seed/seed.sh | sh"]
+    depends_on:
+      - backend
+    restart: "no"
